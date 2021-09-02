@@ -26,10 +26,12 @@ While the compilation with em++ is quite straightforward (provided you previousl
 
 Install Boost headers and adjust the include paths of `dicomlib.pro.example` file to point to the Boost folders. Then rename it to `dicomlib.pro`. After that, you can use build.sh to create `dicomlib.a`. Notice, you can configure the building type in the `build.sh` file itself by selecting the qmake binary of your QT setup (e.g., wasm\_32 (default) or gcc\_64).
 
+```sh
 #!/bin/sh
-~/Qt/5.15.1/wasm_32/bin/qmake   #for Web-Assembly building
-#~/Qt/5.15.1/gcc_64/bin/qmake   #for desktop-binary building
+/Qt/5.15.1/wasm_32/bin/qmake   #for Web-Assembly building
+#/Qt/5.15.1/gcc_64/bin/qmake   #for desktop-binary building
 make
+```
 
 Then, run the following command.
 
