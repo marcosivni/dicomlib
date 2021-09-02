@@ -1,0 +1,59 @@
+QT -= gui
+
+TEMPLATE = lib
+DEFINES += UNTITLED_LIBRARY
+
+CONFIG += c++11
+
+INCLUDEPATH += <your_path_to_ boost>/boost_1_76_0/
+INCLUDEPATH += include
+
+
+# You can make your code fail to compile if it uses deprecated APIs.
+# In order to do so, uncomment the following line.
+#DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
+
+SOURCES += \
+    dicomlib.cpp
+
+HEADERS += \
+    dicomlib_global.h \
+    dicomlib.h
+
+#Dicomlib headers
+SOURCES += \
+        src/File.cpp \
+        src/UID.cpp \
+        src/Exceptions.cpp \
+        src/FileMetaInformation.cpp \
+        src/TransferSyntax.cpp \
+        src/Decoder.cpp \
+        src/Encoder.cpp \
+        src/Buffer.cpp \
+        src/Utility.cpp \
+        src/GroupLength.cpp \
+        src/DataDictionary.cpp
+
+#Dicomlib sources
+HEADERS += \
+        include/dicomlib.hpp \
+        include/File.hpp \
+        include/UIDs.hpp \
+        include/UID.hpp \
+        include/Utility.hpp \
+        include/Dumper.hpp \
+        include/Exceptions.hpp \
+        include/FileMetaInformation.hpp \
+        include/TransferSyntax.hpp \
+        include/Decoder.hpp \
+        include/Encoder.hpp \
+        include/Buffer.hpp \
+        include/Utility.hpp \
+        include/GroupLength.hpp \
+        include/DataDictionary.hpp
+
+# Default rules for deployment.
+unix {
+    target.path = /usr/lib
+}
+!isEmpty(target.path): INSTALLS += target
