@@ -24,7 +24,7 @@ While the compilation with em++ is quite straightforward (provided you previousl
 
 ## Installation
 
-Install Boost headers and adjust the include paths of `dicomlib.pro.example` file to point to the Boost folders. Then rename it to `dicomlib.pro`. After that, you can use build.sh to create the static lib files. Notice, you can configure the building type in the `build.sh` file itself by selecting the qmake binary of your QT setup (e.g., wasm\_32 (default) or gcc\_64).
+Install Boost headers and adjust the include paths of the `dicomlib.pro.example` file to point to the Boost folders. Then rename it to `dicomlib.pro`. After that, you can use build.sh to create the static lib files. Notice, you can configure the building type in the `build.sh` file itself by selecting the qmake binary of your QT setup (e.g., wasm\_32 (default) or gcc\_64).
 
 ```sh
 #!/bin/sh
