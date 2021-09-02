@@ -36,7 +36,7 @@ make
 Then, run the following command.
 
 ```sh
-cd dicomling
+cd dicomlib
 ./build.sh && make clean
 ```
 
