@@ -261,7 +261,7 @@ namespace dicom
 		TAG_TOPIC_AUTHOR              = 0x00880910,
 		TAG_TOPIC_KEYWORDS            = 0x00880912,
 
-		TAG_STUDY_STATUS_ID	        = 0x0032000a,
+        TAG_STUDY_STATUS_ID	          = 0x0032000a,
 		TAG_REQ_PHYS                  = 0x00321032,
 		TAG_REQ_SERVICE               = 0x00321033,
 		TAG_REQ_PROC_DESC             = 0x00321060,
@@ -392,7 +392,7 @@ namespace dicom
 		TAG_INTERPRET_TYPE_ID         = 0x40080210,
 		TAG_INTERPRET_STATUS_ID       = 0x40080212,
 
-		TAG_PIXEL_DATA                = 0x7fe00010,
+        TAG_PIXEL_DATA                = 0x7fe00010,
 
 		TAG_DATA_SET_PADDING          = 0xfffcfffc,
 
