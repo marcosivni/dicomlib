@@ -48,7 +48,7 @@ namespace dicom
 		{
 			DynamicVRCheck<T>(vr);
 			data_=boost::shared_ptr<boost::any>(new boost::any(data));
-		}
+        }
 
 		//could also have a Get() parametrized on VR:
 		//template<VR vr>

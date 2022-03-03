@@ -53,10 +53,10 @@ namespace dicom
 		*/
 
 		const Value& operator()(const Tag tag) const
-		{
-			const_iterator element=find(tag);
-			if(element==end())
-				throw TagNotFound(tag);
+        {
+            const_iterator element=find(tag);
+            if(element==end())
+                throw TagNotFound(tag);
 			return element->second;
 		}
 
